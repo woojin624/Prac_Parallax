@@ -1,0 +1,148 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato";
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* nav */
+#nav {
+  position: fixed;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 61px;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+#nav.on {
+  position: fixed;
+  top: -61px;
+}
+#nav h1 {
+  float: left;
+  color: #fff;
+  font-size: 40px;
+  padding: 5px 5px 5px 15px;
+  font-family: "Abel";
+}
+
+/* dot */
+#dot {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translatey(-50%);
+}
+#dot li {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 15px 12px;
+}
+#dot li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+#dot li a:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 1px #fff;
+  transform: scale(3);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s;
+}
+#dot li.active a {
+}
+#dot li.active a:after {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+#dot li a em {
+  display: none;
+}
+
+/* contents */
+#contents {
+  text-align: center;
+  color: #fff;
+}
+#contents > div {
+  height: 100vh;
+  line-height: 100vh;
+}
+#contents > div h2 {
+  font-size: 70px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+#contents > div h2 strong {
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* section */
+#section3 {
+  background: radial-gradient(
+    ellipse farthest-corner at center top,
+    #a3a1ff,
+    #3a3897
+  );
+}
+#section2 {
+  background: radial-gradient(
+    ellipse farthest-corner at center bottom,
+    #3aa17e,
+    #00537e
+  );
+}
+#section4 {
+  background: radial-gradient(
+    ellipse farthest-corner at center top,
+    #29abe2,
+    #4f00bc
+  );
+}
+#section1 {
+  background: radial-gradient(
+    ellipse farthest-corner at center top,
+    #ff5300,
+    #45145a
+  );
+}
+#section5 {
+  background: radial-gradient(
+    ellipse farthest-corner at center bottom,
+    #852d91,
+    #312a6c
+  );
+}
+#section6 {
+  background: radial-gradient(
+    ellipse farthest-corner at center top,
+    #fbb03b,
+    #d4145a
+  );
+}

@@ -1,0 +1,121 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato";
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* nav */
+#nav {
+  position: fixed;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 61px;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+#nav.on {
+  position: fixed;
+  top: -61px;
+}
+#nav h1 {
+  float: left;
+  color: #fff;
+  font-size: 40px;
+  padding: 5px 5px 5px 15px;
+  font-family: "Abel";
+}
+
+/* dot */
+#dot {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#dot li a {
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  display: block;
+  margin: 8px;
+  border-radius: 50%;
+}
+#dot li a em {
+  display: none;
+}
+#dot li.active a {
+  background: rgba(255, 255, 255, 1);
+}
+
+/* contents */
+#contents {
+  text-align: center;
+  color: #fff;
+}
+#contents > div {
+  height: 100vh;
+  line-height: 100vh;
+}
+#contents > div h2 {
+  font-size: 70px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+#contents > div h2 strong {
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* section */
+#section1 {
+  background: radial-gradient(
+    ellipse farthest-corner at center top,
+    #a3a1ff,
+    #3a3897
+  );
+}
+#section2 {
+  background: radial-gradient(
+    ellipse farthest-corner at center bottom,
+    #3aa17e,
+    #00537e
+  );
+}
+#section3 {
+  background: radial-gradient(
+    ellipse farthest-corner at center top,
+    #29abe2,
+    #4f00bc
+  );
+}
+#section4 {
+  background: radial-gradient(
+    ellipse farthest-corner at center top,
+    #ff5300,
+    #45145a
+  );
+}
+#section5 {
+  background: radial-gradient(
+    ellipse farthest-corner at center bottom,
+    #852d91,
+    #312a6c
+  );
+}
+#section6 {
+  background: radial-gradient(
+    ellipse farthest-corner at center top,
+    #fbb03b,
+    #d4145a
+  );
+}
