@@ -169,6 +169,7 @@ a {
   opacity: 1;
   animation: rubberBand 1s;
 }
+
 #section3.show h2 {
   opacity: 1;
   animation: zoomInUp 1s;
